@@ -10,7 +10,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-
   color: #222;
 }
 
@@ -20,10 +19,17 @@ html {
 
 article {
   max-width: 43em;
+  margin-left: .5em;
 }
 
 article h1 {
   font-weight: normal;
+  line-height: 40%;
+  margin-bottom: 0;
+}
+
+article p {
+  margin-bottom: 0;
 }
 
 article header {
@@ -32,6 +38,7 @@ article header {
 
 article header p {
   font-style: italic;
+  line-height: 120%;
 }
 
 article > p:last-child {
@@ -42,8 +49,74 @@ blockquote {
   max-width: 24em;
   color: #555;
   font-size: 1.125rem;
+  margin: 0;
 }
 
 .quote {
   color: #999;
+}
+
+ol {
+  padding: 1em;
+}
+
+p:last-child {
+  padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  h1 {
+    line-height: 100%;
+  }
+
+  blockquote {
+    max-width: 25em;
+    color: #555;
+    font-size: 1.125rem;
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+  }
+
+  blockquote {
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+  }
+
+  article {
+    margin-left: 9%;
+  }
+
+  blockquote {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 70em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  article {
+    margin-left: 20%;
+  }
+
+  blockquote {
+    margin: auto;
+  }
 }
